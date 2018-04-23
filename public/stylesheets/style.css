@@ -34,7 +34,7 @@ nav, .page-footer{
 .title{
   font-size: 20px;
 }
-pre {
+pre, span {
   white-space: pre-wrap;
   word-wrap: break-word;
   text-align: justify;
