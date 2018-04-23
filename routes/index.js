@@ -69,7 +69,7 @@ router.post('/deleteStickyNote', function (req, res, next) {
       }
     });
   }
-  else if (typeof (deleteNotes) === "string") {
+  else if (typeof (deleteNotes) === "string" || typeof (deleteNotes) === "number") {
     console.log("String", deleteNotes);
     StickyNote.remove({ id: deleteNotes }, function (err) {
       if (err) {
