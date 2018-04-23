@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet' href='/stylesheets/materialize.min.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="/javascripts/materialize.min.js"></script>
+  <script src="/javascripts/script.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">
+        <img class="circle" src="images/stickyRound.jpg" width=56 height=56>
+      </a>
+
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="/">Sticky Notes API</a>
+        </li>
+      </ul>
+      <!-- <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul> -->
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/stickyNote.png">
+        </div>
+        <a href="#user">
+          <img class="circle" src="images/stickyRound.jpg">
+        </a>
+        <a href="#name">
+          <span class="title">Sticky Notes API</span>
+        </a>
+      </div>
+    </li>
+    <!-- <li>
+      <a href="#"></a>
+    </li>
+    <li>
+      <a href="#"></a>
+    </li>
+    <li>
+      <a href="#"></a>
+    </li>
+    <li>
+      <a href="#"></a>
+    </li> -->
+  </ul>
+
+  <ul id="tabs-swipe-demo" class="tabs">
+    <li class="tab col s3">
+      <a class="active" href="#test-swipe-1">Search</a>
+    </li>
+    <li class="tab col s3">
+      <a href="#test-swipe-2">Create</a>
+    </li>
+    <li class="tab col s3">
+      <a href="#test-swipe-3">Update</a>
+    </li>
+    <li class="tab col s3">
+      <a href="#test-swipe-4">Delete</a>
+    </li>
+  </ul>
+  <div id="test-swipe-1" class="col s12">
+    <div class="row">
+      <div class="col s12 m1"></div>
+      <div class="col s12 m5">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Search All Sticky Notes</span>
+            <p>URL: <span class="urlBinding">getStickyNotes</span></p>
+            <p>Method: GET</p>
+            <p>&nbsp;</p>
+            <p>Sample Response:</p>
+            <p>
+              <pre>
+{
+  "noteList": [
+      {
+        "created_on": "2018-04-15T10:51:19.490Z",
+        "_id": "5ad32ea7e332d41284c2deff",
+        "id": 1,
+        "name": "Sample Name",
+        "title": "Sample Title",
+        "notes": "Hello World!",
+        "__v": 0
+        }
+    ]
+}
+                </pre>
+            </p>
+          </div>
+          <div class="card-action">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m5">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Search Sticky Notes by Query Params</span>
+            <p>URL: <span class="urlBinding">getStickyNotes?id=1</span></p>
+            <p>Query Params: &lt;?id=_id, name=_name, title=_title, notes=_notes&gt;</p>
+            <p>Method: GET</p>
+            <p>Sample Response:</p>
+            <p>
+              <pre>
+  {
+    "noteList": [
+        {
+          "created_on": "2018-04-15T10:51:19.490Z",
+          "_id": "5ad32ea7e332d41284c2deff",
+          "id": 1,
+          "name": "Sample Name",
+          "title": "Sample Title",
+          "notes": "Hello World!",
+          "__v": 0
+          }
+      ]
+  }
+                  </pre>
+            </p>
+          </div>
+          <div class="card-action">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <div id="test-swipe-2" class="col s12">
+    <div class="row">
+      <div class="col s12 m1"></div>
+      <div class="col s12 m5">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Create Sticky Note</span>
+            <p>URL: <span class="urlBinding">saveStickyNote</span></p>
+            <p>Method: POST</p>
+            <p>Sample Payload:</p>
+            <p>
+              <pre>
+{
+    "id": 1,
+    "name": "Sample Name",
+    "title": "Sample Title",
+    "notes": "Hello World!"
+}
+</pre>
+            </p>
+            <p>Sample Response:</p>
+            <p>
+              <pre>
+{
+    "result": "Success"
+}
+</pre>
+            </p>
+          </div>
+          <div class="card-action">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="test-swipe-3" class="col s12 ">
+    <div class="row">
+      <div class="col s12 m1"></div>
+      <div class="col s12 m5">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Update Sticky Note</span>
+            <p>URL: <span class="urlBinding">saveStickyNote</span></p>
+            <p>Method: POST</p>
+            <p>Sample Payload:</p>
+            <p>
+              <pre>
+{
+    "id": 1,
+    "name": "Sample Name",
+    "title": "Sample Title",
+    "notes": "Hello World!"
+}
+</pre>
+            </p>
+            <p>Sample Response:</p>
+            <p>
+              <pre>
+{
+    "result": "Success"
+}
+</pre>
+            </p>
+          </div>
+          <div class="card-action">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="test-swipe-4" class="col s12">
+    <div class="row">
+      <div class="col s12 m1"></div>
+      <div class="col s12 m5">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Delete Sticky Note - Single</span>
+            <p>URL: <span class="urlBinding">deleteStickyNote</span> </p>
+            <p>Method: POST</p>
+            <p>Sample Payload:</p>
+            <p>
+              <pre>
+    {
+        "id": 1
+    }
+    </pre>
+            </p>
+            <p>Sample Response:</p>
+            <p>
+              <pre>
+    {
+        "result": "Success"
+    }
+    </pre>
+            </p>
+          </div>
+          <div class="card-action">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m5">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Delete Sticky Note - Multiple</span>
+            <p>URL: <span class="urlBinding">deleteStickyNote</span></p>
+            <p>Method: POST</p>
+            <p>Sample Payload:</p>
+            <p>
+              <pre>
+      {
+          "id": [1,2,3]
+      }
+      </pre>
+            </p>
+            <p>Sample Response:</p>
+            <p>
+              <pre>
+      {
+          "result": "Success"
+      }
+      </pre>
+            </p>
+          </div>
+          <div class="card-action">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer class="page-footer">
+    <!-- <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Sticky Notes API</h5>
+            <p class="grey-text text-lighten-4"></p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright StickyNotesAPI
+        <a class="grey-text text-lighten-4 right" href="/">StickyNotesAPI</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

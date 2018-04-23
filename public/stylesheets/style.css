@@ -1,0 +1,33 @@
+body{
+  font-family: Roboto,Helvetica Neue,sans-serif;
+}
+nav ul a{
+  display: initial;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+nav ul a:hover{
+  background-color: #4255d8;
+}
+nav, .page-footer{
+  background-color: #3f51b5;
+}
+
+.sidenav li>a:hover{
+  color:white;
+  background-color: #4255d8;
+}
+.tabs{
+  font-weight: bold;
+}
+.tabs li  a{
+  text-transform:capitalize;
+}
+.card-title{
+  color:lawngreen;
+  font-weight: bold;
+}
+.title{
+  font-size: 20px;
+}
+
