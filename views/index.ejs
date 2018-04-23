@@ -5,6 +5,7 @@
   <title>
     <%= title %>
   </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel='stylesheet' href='/stylesheets/materialize.min.css' />
   <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -94,7 +95,9 @@
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">Search All Sticky Notes</span>
-            <p>URL: <span class="urlBinding">getStickyNotes</span></p>
+            <p>URL:
+              <span class="urlBinding">getStickyNotes</span>
+            </p>
             <p>Method: GET</p>
             <p>&nbsp;</p>
             <p>Sample Response:</p>
@@ -126,7 +129,9 @@
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">Search Sticky Notes by Query Params</span>
-            <p>URL: <span class="urlBinding">getStickyNotes?id=1</span></p>
+            <p>URL:
+              <span class="urlBinding">getStickyNotes?id=1</span>
+            </p>
             <p>Query Params: &lt;?id=_id, name=_name, title=_title, notes=_notes&gt;</p>
             <p>Method: GET</p>
             <p>Sample Response:</p>
@@ -166,7 +171,9 @@
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">Create Sticky Note</span>
-            <p>URL: <span class="urlBinding">saveStickyNote</span></p>
+            <p>URL:
+              <span class="urlBinding">saveStickyNote</span>
+            </p>
             <p>Method: POST</p>
             <p>Sample Payload:</p>
             <p>
@@ -203,7 +210,9 @@
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">Update Sticky Note</span>
-            <p>URL: <span class="urlBinding">saveStickyNote</span></p>
+            <p>URL:
+              <span class="urlBinding">saveStickyNote</span>
+            </p>
             <p>Method: POST</p>
             <p>Sample Payload:</p>
             <p>
@@ -240,7 +249,9 @@
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">Delete Sticky Note - Single</span>
-            <p>URL: <span class="urlBinding">deleteStickyNote</span> </p>
+            <p>URL:
+              <span class="urlBinding">deleteStickyNote</span>
+            </p>
             <p>Method: POST</p>
             <p>Sample Payload:</p>
             <p>
@@ -269,7 +280,9 @@
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">Delete Sticky Note - Multiple</span>
-            <p>URL: <span class="urlBinding">deleteStickyNote</span></p>
+            <p>URL:
+              <span class="urlBinding">deleteStickyNote</span>
+            </p>
             <p>Method: POST</p>
             <p>Sample Payload:</p>
             <p>
@@ -321,6 +334,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 body{
   font-family: Roboto,Helvetica Neue,sans-serif;
+  background-color: #eee;
 }
 nav ul a{
   display: initial;
@@ -7,12 +8,11 @@ nav ul a{
   font-size: 30px;
 }
 nav ul a:hover{
-  background-color: #4255d8;
+  background-color: #0c3e74;
 }
 nav, .page-footer{
-  background-color: #3f51b5;
+  background-color: #243a51;
 }
-
 .sidenav li>a:hover{
   color:white;
   background-color: #4255d8;
@@ -22,6 +22,10 @@ nav, .page-footer{
 }
 .tabs li  a{
   text-transform:capitalize;
+}
+.tabs .tab a{
+  color: #083761;
+  font-size: 17px;
 }
 .card-title{
   color:lawngreen;
