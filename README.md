@@ -66,7 +66,7 @@ Sample Response:
 <h2>Update Sticky Note</h2>
 URL:  https://stickynotesapi.herokuapp.com/saveStickyNote
 
-Method: POST
+Method: PUT
 
 Sample Payload:
 
@@ -85,7 +85,7 @@ Sample Response:
 <h2>Delete Sticky Note - Single</h2>
 URL:  https://stickynotesapi.herokuapp.com/deleteStickyNote
 
-Method: POST
+Method: DELETE
 
 Sample Payload:
 
@@ -102,7 +102,7 @@ Sample Response:
 <h2>Delete Sticky Note - Multiple</h2>
 URL:  https://stickynotesapi.herokuapp.com/deleteStickyNote
 
-Method: POST
+Method: DELETE
 
 Sample Payload:
 
