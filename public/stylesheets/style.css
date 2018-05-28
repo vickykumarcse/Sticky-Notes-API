@@ -43,3 +43,9 @@ pre, span {
   margin-left: 0;
   margin-right:0;
 }
+.page-footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}

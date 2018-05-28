@@ -10,7 +10,8 @@ var usersRouter = require('./routes/users');
 
 var mongoose = require('mongoose');
 var config = require('./config');
-mongoose.connect(config.databaseUrl["production"]);
+mongoose.connect(config.getDatabase());
+
 var db = mongoose.connection;
 db.on('error',
  console.error.bind(console, 'connection error:')
