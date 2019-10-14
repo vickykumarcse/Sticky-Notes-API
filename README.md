@@ -1,8 +1,9 @@
 # StickyNotesAPI
-API for Sticky Notes<br/>
-Project URL :- https://stickynotesapi.herokuapp.com/ <br/>
+This project is based on NodeJS and MongoDB to manage online sticky notes, it is implemented using REST API. User can consume the below end points to access the sticky notes.
+## Project URL 
+[https://stickynotesapi.herokuapp.com](https://stickynotesapi.herokuapp.com)
 
-<pre>
+## Usage
 <h2>Search All Sticky Notes</h2><br/>
 URL:  https://stickynotesapi.herokuapp.com/getStickyNotes<br/>
 Method: GET
